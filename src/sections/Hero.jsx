@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer } from "@/animations/variants";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24">
+    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-2">
       {/* Liquid orb + gradients */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 animate-float rounded-full bg-primary/30 blur-[140px]" />
@@ -23,11 +23,16 @@ export default function Hero() {
           System Ready · {profile.location}
         </motion.p>
 
-        <motion.h1 variants={fadeUp} className="font-display text-4xl font-semibold leading-[1.1] sm:text-6xl md:text-7xl">
-          Hello, I'm
-          <br />
-          <span className="text-gradient">{profile.name}</span>
-        </motion.h1>
+       <motion.h1
+  variants={fadeUp}
+  className="font-display text-4xl font-semibold leading-[1.1] sm:text-6xl md:text-7xl"
+>
+  Hello, I'm
+  <br />
+  <span className="text-gradient text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-7xl">
+    {profile.name}
+  </span>
+</motion.h1>
 
         <motion.div variants={fadeUp} className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-sm text-accent sm:text-base">
           {profile.roles.map((role, i) => (

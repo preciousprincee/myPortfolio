@@ -53,12 +53,15 @@ export default function SkillsMatrix() {
               </div>
               <div className="mb-3 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
                 <motion.div
-                  className="h-full rounded-full bg-gradient-to-r from-primary via-secondary to-accent"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.confidence}%` }}
-                  viewport={sectionViewport}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                />
+  className="h-full rounded-full bg-gradient-to-r from-primary via-secondary to-accent"
+  initial={{ width: 0 }}
+  animate={{ width: `${skill.confidence}%` }}
+  transition={{
+    duration: 0.8,
+    ease: "easeOut",
+    delay: i * 0.08,
+  }}
+/>
               </div>
               <motion.div
                 initial={false}
