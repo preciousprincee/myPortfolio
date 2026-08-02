@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer } from "@/animations/variants";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-0">
+    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-0 mt-0">
       {/* Liquid orb + gradients */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 animate-float rounded-full bg-primary/30 blur-[140px]" />
