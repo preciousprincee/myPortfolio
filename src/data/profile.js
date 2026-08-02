@@ -15,7 +15,7 @@ export const profile = {
     linkedin: "https://linkedin.com/in/precious-ogbonnaya-0ababb220",
     x: "https://x.com/heisfortynz",
   },
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Precious Ogbonnaya CV.pdf",
 };
 
 export const primaryStack = ["Python", "Django", "SQL", "React", "JavaScript", "Machine Learning"];

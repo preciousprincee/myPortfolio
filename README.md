@@ -36,12 +36,6 @@ your data updates every surface at once.
 
 ## Replace before shipping
 
-- `public/resume.pdf` is a placeholder — drop your real PDF in at the same path.
-- Social links, email, and demo/GitHub URLs in `src/data/profile.ts` and
-  `src/data/projects.ts` are placeholders — update them.
-- `src/sections/Analytics.jsx` uses illustrative commit/language/contribution
-  data. Wire it up to the GitHub REST API (or a small serverless function, to
-  keep your token off the client) for live numbers.
 - `src/sections/Contact.jsx`'s form currently only shows a local "sent" state.
   Connect it to a form service (Formspree, Resend, etc.) to actually receive
   messages — this project intentionally ships with no backend.
