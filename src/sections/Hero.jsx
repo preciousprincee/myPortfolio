@@ -23,16 +23,11 @@ export default function Hero() {
           System Ready · {profile.location}
         </motion.p>
 
-       <motion.h1
-  variants={fadeUp}
-  className="font-display text-4xl font-semibold leading-[1.1] sm:text-6xl md:text-7xl"
->
-  Hello, I'm
-  <br />
-  <span className="text-gradient text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-7xl">
-    {profile.name}
-  </span>
-</motion.h1>
+        <motion.h1 variants={fadeUp} className="font-display text-4xl font-semibold leading-[1.1] sm:text-6xl md:text-7xl">
+          Hello, I'm
+          <br />
+          <span className="text-gradient text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-7xl">{profile.name}</span>
+        </motion.h1>
 
         <motion.div variants={fadeUp} className="mt-6 flex flex-wrap items-center justify-center gap-2 font-mono text-sm text-accent sm:text-base">
           {profile.roles.map((role, i) => (
