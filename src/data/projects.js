@@ -94,7 +94,7 @@ export const projects = [
       { label: "Data Isolation", value: "RLS on all tables" },
       { label: "Delivery", value: "Installable PWA" },
     ],
-    links: { demo: "#evolveeapp.vercel.app", github: "https://github.com/preciousprincee/evolve" },
+    links: { demo: "https://evolveeapp.vercel.app", github: "https://github.com/preciousprincee/evolve" },
   },
   {
     id: "tweet-sentiment",
